@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artikel</title>
+    <link rel="stylesheet" type="text/css" href="css/styleblog.css">
+
+
+
+</head>
+<body>
+    
+    <div class="button">
+
+        <a href="index.html"> <button type="button" >Home</button> </a> 
+      </div>
+
+<tr>
+  
+
+    <h2 class="logo">Install Apache <span> dan Bind 9</span></h2>
+<!--ke1-->
+<p style="text-align:center">           
+            Install apache2            
+            <img src="img/pic konfigurasi deiban 11/apache&bind9/1.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+            <br>
+            -Install aPache 2 deNGaN apt-Get install apache2 LaLu tungguu sampai selesai. jika ada Pertanyaan (Y/N) ketik Y lalu enter
+            </p>
+            <br>
+            <br>
+
+<!----Ke 2-->
+<p style="text-align:center">           
+
+    <br>
+            Cek status apache2
+            <br>
+
+        <img src="img/pic konfigurasi deiban 11/apache&bind9/2.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+        -	Setelah selesai install apache2 pastikan apache2 sudah berjalan dengan cara systemctl status apache2
+    </p>
+    <br>
+    <br>
+    <br>
+
+
+<!----Ke 3-->
+<div class="button">
+
+    <a href="index.html"> <button type="button" >Home</button> </a> 
+  </div>
+n 
+   <h2 id="bind9" class="logo">Install <span> bind9 </span></h2>
+   <p style="text-align:center">           
+   Pagari ip debian yang ada di /etc/network/interfaces
+   <br>
+<img src="img/pic konfigurasi deiban 11/apache&bind9/3.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+    -sebelum sintall bind9 kita harus masuk ke directory /etc/NetworK/interfaces dengan cara nano /etc/NetworK/interfaces setelah Itu pagari ip kalian</p>
+    <br>
+    <br>
+
+<!----Ke 4-->
+<p style="text-align:center">   
+    <br>
+        
+    Pastikan settingan machine menjadi NAT
+    <br>
+
+<img src="img/pic konfigurasi deiban 11/apache&bind9/4.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+    -jika ip nya sudah di kasih pagar kalian juga harus memastikaN settingan machinenya Berupa NAT caranya dengan meng klik tomboL machine di kiri atas diluar layar debian kalian lalu klik setting lalu klik network
+</p>
+<br>
+<br>
+<!----Ke 5-->
+<p style="text-align:center">           
+    Restart networking & reboot
+     <br>
+
+<img src="img/pic konfigurasi deiban 11/apache&bind9/4.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+    -seteLah kalian mengatur IP dan machine kalian PerLu merestart networking kalian dengan cara systemlctl restart networkingdan juga mereboot ulang komputer kalian dengan cara sYstemctL reboot</p>
+<br>
+<br>
+ <!----Ke 6-->
+ <p style="text-align:center">           
+    Cek ip
+    <br>
+
+<img src="img/pic konfigurasi deiban 11/apache&bind9/6.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+    -jika sudah selesai cek ip kalian dengan cara ip -c a seteLah Itu cek bagian inet yang bawah jIKa sudah 10.0.2.15 maka itu berarti sudah benar dan kalian bisa menginstall BIND9.
+    </p>
+    <br>
+    <br>
+ <!----Ke 7-->
+ <p style="text-align:center">           
+    Install bind9
+    <br>
+
+<img src="img/pic konfigurasi deiban 11/apache&bind9/7.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+    -jika semua tadi sudah berhasil install BIND9 dengan cara aPt-Get INstaLL BIND9 LaLu tuNGGu samPaI seLasaI jIKa ada PertaNYaaN (Y/N) KetIK Y LaLu eNter    </p>
+    <br>
+    <br>
+ <!----Ke 8-->
+ <p style="text-align:center">           
+    Cek Status bind9
+    <br>
+
+<img src="img/pic konfigurasi deiban 11/apache&bind9/8.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+    -SeteLah BIND9 seLesaI DI DowNLoad ceK status deBIaN DeNGaN cara sYstemctL status BIND9 PastIKaN BIND9 aKtIf    <br>
+    <br>
+    <br>
+ <!----Ke 9-->
+ <p style="text-align:center">           
+    Kembalikan ip seperti semula
+    <br>
+
+<img src="img/pic konfigurasi deiban 11/apache&bind9/9.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+    -SeteLah BerurusaN DeNGaN IP KaLIaN BIsa KemBaLIKaN IP sePertI semuLa.    <br>
+    <br>
+    <br>
+
+<!----Ke 10-->
+<p style="text-align:center">           
+    Restart & reboot
+        <br>
+
+<img src="img/pic konfigurasi deiban 11/apache&bind9/10.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+    -SeteLah meNGGaNtI IP sePertI semuLa KaLIaN PerLu restart NetworKING DaN reBoot seKaLI LaGI. 
+       <br>
+    <br>
+
+<!----Ke 11-->
+<p style="text-align:center">           
+    Cek ip debian       
+     <br>
+
+<img src="img/pic konfigurasi deiban 11/apache&bind9/11.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+    -jIKa sudah ceK IP DeBIaN KaLIaN DeNGa IP -c a LaLu PastIKaN IP INet YaNG Bawah sama deNGaN IP KaLIaN DaN BuKaN 10.0.2.15     
+     <br>
+    <br>
+
+<!----Ke 12-->
+<p style="text-align:center">           
+    Ketik Ip debian di browser di debian   
+      <br>
+
+<img src="img/pic konfigurasi deiban 11/apache&bind9/12.jpg" style="display:block; margin:auto;"  width="700px" height="400px" >
+JIKa seLuruhNYa sudah amaN coBaLah KetIK IP KaLIaN DI Browser deBIaN KaLIaN jIKa ada tamPILaN sePertI INI Itu BerartI Kamu sudah BerhasIL SELAMAT  
+   <br>
+    <br>
+
+
+<!---navigasi-->
+
+<div class="service" id="Debian11">
+    <div class="title">
+    </div>
+
+    <div class="box">
+        <div class="cardweb">
+            <i class="#"></i>
+            <h5>Setting repository</h5>
+            <div class="pra">
+
+                <p style="text-align: center;">
+                    <a class="button" href="settingre.html">Read More</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="cardweb">
+            <i class="#"></i>
+            <h5>Install SSH dan setting</h5>
+            <div class="pra">
+
+                <p style="text-align: center;">
+                    <a class="button" href="installssh.html">Read More</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="cardweb">
+            <i class="#"></i>
+            <h5>setting IP dan Network</h5>
+            <div class="pra">
+
+                <p style="text-align: center;">
+                    <a class="button" href="settingip.html">Read More</a>
+                </p>
+            </div>
+        </div>
+
+        </div>
+
+
+
+
+
+
+    </td>
+</tr>    
+</body>
+</html>
